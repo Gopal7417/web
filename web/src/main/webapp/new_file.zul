@@ -1,0 +1,9 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Property Retrieval" border="normal" apply="zk.web.PropertyRetriever">
+      Enter a property name: <textbox id="input"/>
+     <button label="Retrieve" id="retrieve"  />
+     <textbox id="input2"/>
+	<button id ="send" label="Send"/>
+</window>
+</zk>
