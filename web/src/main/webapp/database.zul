@@ -5,5 +5,7 @@
      <button label="Retrieve" id="retrieve"  />
      <textbox id="input2"/>
 	<button id ="send" label="Send"/>
+	<button id="upload" label="upload"/>
+	<button id ="download" label="Send"/>
 </window>
 </zk>
