@@ -1,0 +1,11 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<style>
+div{background-image:url('sun.jpg');
+background-repeat:no-repeat;
+}
+</style>
+<window id="win" title="This is an Iframe Demo!">
+    <iframe style="width:99%; height:400px;border:3px inset;" src="http://www.zkoss.org" />
+</window>
+</zk>
