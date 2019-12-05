@@ -75,23 +75,15 @@ public class PropertyRetriever extends SelectorComposer<Window> {
      
     @Listen("onClick=#retrieve")
     public void submit(Event event) { //register a listener to a component called retrieve
-        String prop = input.getValue();
-     
+        String prop = input.getValue();     
         String me = input.getValue();
-        
-        
-        Mail nw = new Mail();
-        
-       s = nw.main(me);
-        
-        
+        Mail nw = new Mail();     
+       s = nw.main(me);     
     }
     @Listen("onClick=#submit")
     public void submit2(Event event) {
     	
-    s2 = input2.getValue();
-    	
-    	
+    s2 = input2.getValue(); 
      if(s.equals(s2))
      {
             result.appendChild(new Label("Success"));
