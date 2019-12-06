@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?page title="Task"?>
+<window id="dbdemo" title="Task List" border="normal" width="500px" 
+  use="com.potix.task1.dbdemo">
+	Tasks:
+	<textbox id = "test"/>
+	<button label="New..." onClick="dbdemo.render()"/>	
+</window>

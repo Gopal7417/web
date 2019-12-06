@@ -1,0 +1,15 @@
+<zk>
+    <style src="navstyle.css"></style>
+    <div id="container" sclass="vertical" apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('com.potix.task1.NavigationViewModel')">
+        <navbar id="navbar" orient="horizontal" collapsed="false" onSelect="@command('navigatePage', target=self.selectedItem.attributes['NavigationPage'])">
+ 			<nav label="ZK's Pizza" iconSclass="z-icon-home" children="@load(vm.pageMap[self.label].values()) @template('navitem')"/>
+ 			<nav label="Customers" iconSclass="z-icon-group" badgeText="3" children="@load(vm.pageMap[self.label].values()) @template('navitem')"/>
+			<nav label="Orders" iconSclass="z-icon-truck" badgeText="4" children="@load(vm.pageMap[self.label].values()) @template('navitem')"/>
+			<nav label="Fan Service" iconSclass="z-icon-star" children="@load(vm.pageMap[self.label].values()) @template('navitem')"/>
+            <template name="navitem" var="NavigationPage">
+                <navitem label="@load(NavigationPage.subTitle)" selected="@load(NavigationPage.selected)"/>
+            </template>
+        </navbar>
+        <include id="contentInclude" mode="instant" sclass="content" currentPage="@ref(vm.currentPage)" src="index.zul" />
+    </div>
+</zk>
