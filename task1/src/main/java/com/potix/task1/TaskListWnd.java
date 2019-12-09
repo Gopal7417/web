@@ -43,8 +43,7 @@ public class TaskListWnd extends Window {
 			WebApplicationContextUtils.getRequiredWebApplicationContext(
 				(ServletContext)getDesktop().getWebApp().getNativeContext());
 		taskDAO = (TaskDAO)ctx.getBean("taskDAO");
-		
-		tasks = taskDAO.findAll();
+        tasks = taskDAO.findAll();
 		render();
 	}
 	

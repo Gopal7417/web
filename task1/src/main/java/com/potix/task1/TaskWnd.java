@@ -33,7 +33,7 @@ public class TaskWnd extends Window {
 				(ServletContext)getDesktop().getWebApp().getNativeContext());
 		taskDAO = (TaskDAO)ctx.getBean("taskDAO");
 	}	
-	public void onOK() throws Exception {
+public void onOK() throws Exception {
 		if (task == null) {
 			//new
 			task = new Task();			

@@ -2,6 +2,9 @@
 <zk>
 <window  id="click" title="new page title" border="normal" use="com.potix.task1.dbdemo">
 <textbox id="test"/>
+<textbox id="test2"/>
+<include src="" id="x"></include>
+
 <button label="Press" onClick="click.render()"/>
 </window>
 </zk>
