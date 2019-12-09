@@ -1,6 +1,7 @@
 <?page title="new page title" contentType="text/html;charset=UTF-8"?>
 <zk>
-<window title="new page title" border="normal">
-
+<window  id="click" title="new page title" border="normal" use="com.potix.task1.dbdemo">
+<textbox id="test"/>
+<button label="Press" onClick="click.render()"/>
 </window>
 </zk>

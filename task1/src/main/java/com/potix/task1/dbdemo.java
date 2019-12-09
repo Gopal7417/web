@@ -16,14 +16,10 @@ import org.zkoss.zul.*;
 public class dbdemo extends Window {
 protected TaskDAO taskDAO;
 
-@Wire
-Textbox test;
 
 public void render() {
 Textbox lb = (Textbox)this.getFellow("test");
-System.out.println(test.getValue());
-/*ApplicationContext ctx = WebApplicationContextUtils.getRequiredWebApplicationContext(
-	(ServletContext)getDesktop().getWebApp().getNativeContext());
-taskDAO = (TaskDAO)ctx.getBean("taskDAO");*/
+System.out.println(lb.getValue());
+taskDAO.call();
 }
 }
